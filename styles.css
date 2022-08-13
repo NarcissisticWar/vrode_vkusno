@@ -1,0 +1,380 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1b1a1b;
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+}
+
+h3 {
+    color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+}
+
+h4 {
+    font-style: italic;  
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header_pos {
+    position: absolute;
+}
+
+.header_main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(31, 31, 31, 0.7);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    z-index: 10;
+}
+
+.vertical_menu {
+    display: flex;
+    padding: 0px;
+ }
+
+ .vertical_menu ul {
+    width: 130px;
+    padding: 10px;
+    margin: 0px;
+    position: absolute;
+    left: 135px;
+    top: 60px;
+    border: 1px solid rgb(151, 146, 146);
+    border-radius: 10px;
+    background-color: rgb(51, 50, 51, 0.7);
+    transition: all 0.5s ease;
+ }
+
+ .vertical_menu li:hover {
+    background-color: coral;
+    border-radius: 5px;
+ }
+
+
+li {
+    list-style: none;
+}
+
+.header_part {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 50px;
+}
+
+.header_part_button {
+    display: flex;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+.header_part_button .vertical_menu {
+    display: none;
+}
+
+.header_part_button:hover .vertical_menu {
+    display: block;
+}
+
+.header_part_logo {
+    padding: 15px;
+    width: 50px;
+    text-align: center;
+    margin-right: 15px;
+    background-color: rgb(44, 77, 90);
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 0px 4px 0px rgb(41, 41, 41);
+    transition: all 0.5s ease;
+}
+
+.header_part_button:hover {
+    background-color: coral;
+    border-radius: 20px;
+}
+
+
+.header_part_logo:hover {
+    background-color: coral;
+}
+
+img.cart {
+    width: 35px;
+    filter: invert(100);
+    cursor: pointer;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    align-items: center;
+    flex-basis: 20%;
+    height: 1000px;
+    transition: all 0.7s ease;
+    transition-delay: 0.1s;
+}
+
+.item:hover {
+    flex-basis: 55%;
+}
+
+.slider_item-1 {
+    background: url("1.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.slider_item-2 {
+    background: url("2.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.slider_item-3 {
+    background: url("3.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.slider_item-4 {
+    background: url("4.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.slider_item-5 {
+    background: url("5.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.halls_main img {
+    border-radius: 15px;
+    width: 450px;
+    transition: all 0.5s ease;
+}
+
+.halls_main img:hover {
+    filter: brightness(1.1);
+}
+
+.halls_main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.hall1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #3d363d85;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.hall1_desc {
+    padding: 20px;
+}
+
+.hall2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    background-color: #3d363d85;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.hall2_desc {
+    padding: 20px;
+}
+
+.hall3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #3d363d85;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.hall3_desc {
+    padding: 20px;
+}
+
+.hall4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    background-color: #3d363d85;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.hall4_desc {
+    padding: 20px;
+}
+
+.hall5 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #3e373e85;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.hall5_desc {
+    padding: 20px;
+}
+
+.delivery_description {
+    display: flex;
+    position: relative;
+    top: 100px;
+    flex-direction: column;
+    max-width: 1000px;
+    padding: 30px;
+    background-color: #3d363d85;
+    margin: auto;
+    border-radius: 15px;
+    align-content: center;
+    justify-content: center;
+}
+
+.catalog_body {
+    display: flex;
+    position: relative;
+    top: 50px;
+    padding: 10px;
+    width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.catalog_body img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.catalog_item {
+    display: block;
+    background-color: #3e373e85;
+    width: 23%;
+    height: 500px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.catalog_item_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+}
+
+.catalog_item_description_text {
+    padding: 10px 15px;
+    background-color: #584f5885;
+    border-radius: 15px;
+    height: 200px;
+    text-align: center;
+    text-indent: 5px;
+    overflow: hidden
+}
+
+.catalog_item_description_text h4 {
+    height: 57px;
+}
+
+.catalog_item_description_price_button {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.catalog_item_description_price_button a {
+    display: flex;
+    
+    border: 1px solid black;
+    padding: 10px;
+    width: 75px;
+    height: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.catalog_item_description_price_button a:hover {
+    background-color: coral;
+}
+
+.foodpage_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; 
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+.feedback {
+    display: flex;
+    position: relative;
+    top: 100px;
+    width: 1000px;
+    height: 400px;
+    justify-content: center;
+    margin: auto;
+    transition: all 0.5s ease;
+
+}
+
+.feedback_video {
+    display: block;
+
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #3d363d85;
+    border-radius: 20px;
+}
+
+.feedback img {
+    border-radius: 20px;
+}
+
+.feedback img:hover {
+    filter: brightness(1.2);
+}
